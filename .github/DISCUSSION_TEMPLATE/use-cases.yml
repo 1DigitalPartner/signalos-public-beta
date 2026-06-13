@@ -1,0 +1,32 @@
+title: "[Use Case] "
+labels:
+  - use-case
+body:
+  - type: input
+    id: role
+    attributes:
+      label: Role or team
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Business problem
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current workflow
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+    validations:
+      required: true
+  - type: textarea
+    id: blocker
+    attributes:
+      label: Adoption blocker

@@ -5,19 +5,30 @@ labels:
   - premium-agent
   - beta-test
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report a completed Premium Agent evaluation.
+
+        Do not include secrets, private repository contents, customer data, or security-sensitive information.
+
   - type: input
     id: recommendation
     attributes:
       label: Recommendation type
-      placeholder: Owned audience capture, tracking, CTA, SEO...
+      placeholder: Owned audience capture, tracking, CTA, SEO
     validations:
       required: true
 
-  - type: input
+  - type: dropdown
     id: runtime
     attributes:
       label: Execution runtime
-      placeholder: github_pr, manual package, terminal playbook...
+      options:
+        - GitHub pull request
+        - Manual implementation package
+        - Guided terminal playbook
+        - Other
     validations:
       required: true
 
@@ -34,10 +45,10 @@ body:
     attributes:
       label: Did the executed result match the approved preview?
       options:
-        - Yes
-        - Partially
-        - No
-        - No external execution performed
+        - "Yes"
+        - "Partially"
+        - "No"
+        - "No external execution performed"
     validations:
       required: true
 
@@ -45,7 +56,7 @@ body:
     id: evidence
     attributes:
       label: Safe execution evidence
-      description: Branch, commit, PR state, or sanitized result. Use only a dedicated test repository.
+      description: Add sanitized branch, commit, pull request, or result information from a dedicated test repository.
 
   - type: textarea
     id: verification
