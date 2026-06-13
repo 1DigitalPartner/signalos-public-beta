@@ -1,0 +1,81 @@
+name: GitHub connector feedback
+description: Evaluate authorization, exact-target controls, execution, verification, and rollback.
+title: "[GitHub Connector]: "
+labels:
+  - connector
+  - github
+  - beta-feedback
+body:
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Workflow stage
+      options:
+        - OAuth authorization
+        - Repository target configuration
+        - Branch target configuration
+        - Target-file configuration
+        - Write approval
+        - Approval revocation
+        - External write
+        - Branch creation
+        - Commit creation
+        - Pull request creation
+        - Verification
+        - Rollback
+    validations:
+      required: true
+
+  - type: textarea
+    id: test_setup
+    attributes:
+      label: Safe test setup
+      description: Describe the repository type, base branch, and target-file type without exposing private data.
+    validations:
+      required: true
+
+  - type: textarea
+    id: result
+    attributes:
+      label: Result
+      description: Describe what happened and whether it matched the documented model.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: assertions
+    attributes:
+      label: Safety assertions
+      options:
+        - label: No direct commit was made to the base branch.
+        - label: The preview branch was isolated.
+        - label: Only the approved target file changed.
+        - label: Changing the target revoked prior write approval.
+        - label: Connector approval and application approval were separate.
+        - label: Verification required a real external write.
+        - label: Branch, commit, and pull request metadata were visible.
+
+  - type: textarea
+    id: trust
+    attributes:
+      label: Trust assessment
+      description: What increased or reduced your trust in the workflow?
+    validations:
+      required: true
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Suggested improvement
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I used an authorized non-production test repository.
+          required: true
+        - label: I removed tokens, private repository data, and sensitive identifiers.
+          required: true
+        - label: This report does not disclose a vulnerability.
+          required: true

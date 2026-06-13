@@ -1,0 +1,66 @@
+title: "[Integration Request] "
+labels:
+  - integration-request
+body:
+  - type: input
+    id: platform
+    attributes:
+      label: Requested platform or connector
+      placeholder: GitLab, Vercel, Cloudflare, GA4, Search Console, CRM...
+    validations:
+      required: true
+
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Real workflow
+      description: Explain what should be read, analyzed, created, or updated.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Required capability
+      options:
+        - Read-only intelligence
+        - Approval-gated write
+        - Both read and write
+        - Unsure
+    validations:
+      required: true
+
+  - type: textarea
+    id: value
+    attributes:
+      label: Business value
+      description: Explain the expected result, time saved, or risk reduced.
+    validations:
+      required: true
+
+  - type: textarea
+    id: controls
+    attributes:
+      label: Required controls
+      description: Describe target restrictions, approvals, verification, and rollback expectations.
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Expected usage frequency
+      options:
+        - Daily
+        - Weekly
+        - Monthly
+        - Per client or project
+        - Occasionally
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I did not include credentials, customer data, or private implementation details.
+          required: true

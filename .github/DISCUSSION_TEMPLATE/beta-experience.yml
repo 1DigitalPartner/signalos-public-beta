@@ -1,0 +1,65 @@
+title: "[Beta Experience] "
+labels:
+  - beta-feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share your overall SignalOS beta experience.
+
+        Do not include secrets, private repository contents, customer data, or security-sensitive information.
+
+  - type: dropdown
+    id: path
+    attributes:
+      label: Testing path
+      options:
+        - Explorer
+        - Operator
+        - Design Partner
+        - General evaluation
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Describe your role, use case, and what you tested.
+    validations:
+      required: true
+
+  - type: textarea
+    id: strongest
+    attributes:
+      label: Strongest part of the experience
+    validations:
+      required: true
+
+  - type: textarea
+    id: weakest
+    attributes:
+      label: Weakest or most confusing part
+    validations:
+      required: true
+
+  - type: textarea
+    id: value
+    attributes:
+      label: Practical or commercial value
+      description: What would you use repeatedly or pay for?
+
+  - type: textarea
+    id: next
+    attributes:
+      label: Highest-priority improvement
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I removed confidential and security-sensitive information.
+          required: true

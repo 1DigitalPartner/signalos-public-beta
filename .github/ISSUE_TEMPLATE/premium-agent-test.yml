@@ -1,0 +1,81 @@
+name: Premium Agent test result
+description: Submit a structured end-to-end Premium Agent evaluation.
+title: "[Premium Agent Test]: "
+labels:
+  - premium-agent
+  - beta-test
+body:
+  - type: input
+    id: recommendation
+    attributes:
+      label: Recommendation type
+      placeholder: Owned audience capture, tracking, CTA, SEO...
+    validations:
+      required: true
+
+  - type: input
+    id: runtime
+    attributes:
+      label: Execution runtime
+      placeholder: github_pr, manual package, terminal playbook...
+    validations:
+      required: true
+
+  - type: textarea
+    id: package_quality
+    attributes:
+      label: Execution package quality
+      description: Assess specificity, implementation detail, tracking, risk, verification, and rollback.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: preview_match
+    attributes:
+      label: Did the executed result match the approved preview?
+      options:
+        - Yes
+        - Partially
+        - No
+        - No external execution performed
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Safe execution evidence
+      description: Branch, commit, PR state, or sanitized result. Use only a dedicated test repository.
+
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification assessment
+      description: Was the verified state justified by real evidence?
+    validations:
+      required: true
+
+  - type: textarea
+    id: value
+    attributes:
+      label: Practical value
+      description: Did this reduce work, improve quality, or create a usable implementation?
+    validations:
+      required: true
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Highest-priority improvement
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I reviewed the proposed action before approval.
+          required: true
+        - label: I used only authorized test assets and repositories.
+          required: true
+        - label: I removed secrets and confidential data.
+          required: true

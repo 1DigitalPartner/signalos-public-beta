@@ -1,0 +1,74 @@
+SignalOS Public Beta Materials License
+
+Copyright © 2026 TanziTech / Gabriele Tanzi. All rights reserved.
+
+1. Scope
+
+This license applies to the documentation, guides, screenshots, examples, issue templates, discussion templates, roadmap materials, branding, and other public-beta resources contained in this repository.
+
+The production SignalOS platform source code is not distributed through this repository.
+
+2. Permitted use
+
+You may:
+
+- view these materials;
+- use them to evaluate the SignalOS public beta;
+- reference them when submitting product feedback;
+- quote limited portions with attribution for commentary, review, or discussion;
+- create GitHub issues and discussions using the provided templates.
+
+3. Restrictions
+
+Unless you have prior written permission from TanziTech, you may not:
+
+- copy or republish substantial portions of these materials;
+- sell, sublicense, or commercially redistribute these materials;
+- use the materials to create or market a competing product or service;
+- remove copyright, attribution, or proprietary notices;
+- use SignalOS, TanziTech, or related branding in a way that suggests endorsement, partnership, or ownership;
+- misrepresent this repository as open-source software;
+- reverse engineer, reproduce, or distribute the private production platform;
+- use screenshots or examples containing personal, customer, security-sensitive, or confidential information.
+
+4. Contributions
+
+By submitting an issue, discussion, comment, pull request, suggestion, or other contribution to this repository, you grant TanziTech a worldwide, perpetual, irrevocable, non-exclusive, royalty-free license to use, reproduce, modify, publish, distribute, and incorporate that contribution into SignalOS, related products, documentation, and commercial services.
+
+You represent that you have the right to submit the contribution and that it does not contain confidential information, third-party secrets, or material you are not authorized to disclose.
+
+Submitting feedback does not transfer ownership of SignalOS or its proprietary platform to the contributor.
+
+5. Trademarks and branding
+
+SignalOS, TanziTech, associated names, logos, visual identity, product descriptions, and commercial positioning are proprietary identifiers of TanziTech.
+
+No trademark or branding rights are granted by this license.
+
+6. No warranty
+
+These materials and the public beta are provided “as is” and “as available,” without warranties of any kind, express or implied, including warranties of merchantability, fitness for a particular purpose, non-infringement, availability, accuracy, or production suitability.
+
+7. Limitation of liability
+
+To the maximum extent permitted by applicable law, TanziTech and its contributors will not be liable for any indirect, incidental, special, consequential, exemplary, or commercial damages arising from the use of these materials or participation in the beta.
+
+You remain responsible for reviewing every recommendation, approval, generated change, connector authorization, commit, pull request, and deployment decision.
+
+8. Security and acceptable testing
+
+Participation in the beta does not authorize testing against systems, accounts, repositories, or data you do not own or have explicit permission to assess.
+
+Security-sensitive findings must follow the private reporting process in SECURITY.md.
+
+9. Separate agreements
+
+Beta access, paid services, design partner engagements, custom development, support commitments, and commercial licensing may be governed by separate written agreements.
+
+Where a separate signed agreement conflicts with this license, the signed agreement controls for the covered relationship.
+
+10. Permission requests
+
+For commercial reuse, publication, partnership, branding, or licensing requests, contact:
+
+info@tanzitech.com

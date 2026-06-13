@@ -1,0 +1,126 @@
+name: Bug report
+description: Report a reproducible defect in the SignalOS public beta.
+title: "[Bug]: "
+labels:
+  - bug
+  - beta-feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for testing SignalOS.
+
+        Do not include tokens, passwords, cookies, private repository contents, customer data, or security-sensitive information. Use the private process in SECURITY.md for vulnerabilities.
+
+  - type: dropdown
+    id: mission
+    attributes:
+      label: Test mission
+      description: Which beta mission were you following?
+      options:
+        - Mission 01 — Explorer evaluation
+        - Mission 02 — Operator execution test
+        - Mission 03 — Trust and clarity review
+        - Mission 04 — Recommendation quality review
+        - Mission 05 — Design Partner evaluation
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: area
+    attributes:
+      label: Product area
+      placeholder: Scan report, Premium Agent, GitHub connector, approval flow, verification...
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Describe your role, testing path, and goal without sharing confidential information.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Provide exact numbered steps.
+      placeholder: |
+        1. Open...
+        2. Select...
+        3. Approve...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Explain how this affected completion, trust, time, or business value.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reproducible
+    attributes:
+      label: Reproducible?
+      options:
+        - Yes, consistently
+        - Yes, intermittently
+        - No
+        - Not tested again
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Suggested severity
+      options:
+        - Low
+        - Medium
+        - High
+        - Unsure
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: macOS 26, Chrome 141, desktop
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Safe evidence
+      description: Add redacted screenshots, sanitized errors, timestamps, or safe public test-PR links.
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I removed secrets, private data, customer information, and sensitive identifiers.
+          required: true
+        - label: This is not a vulnerability or security-sensitive report.
+          required: true

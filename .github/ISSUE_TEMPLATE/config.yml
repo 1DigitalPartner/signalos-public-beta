@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: SignalOS Security Report
+    url: mailto:security@tanzitech.com
+    about: Report vulnerabilities and security-sensitive findings privately. Do not open a public issue.
+  - name: SignalOS Product Discussions
+    url: https://github.com/1DigitalPartner/signalos-public-beta/discussions
+    about: Share broader use cases, questions, ideas, and non-sensitive beta experiences.

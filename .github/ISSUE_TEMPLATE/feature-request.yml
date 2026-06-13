@@ -1,0 +1,68 @@
+name: Feature or integration request
+description: Propose a capability tied to a real workflow and business outcome.
+title: "[Request]: "
+labels:
+  - feature-request
+body:
+  - type: input
+    id: request
+    attributes:
+      label: Requested capability or integration
+    validations:
+      required: true
+
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Current workflow
+      description: Describe the real workflow, current tools, and manual steps.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or limitation
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected outcome
+      description: Explain the measurable or observable result.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Expected frequency
+      options:
+        - Daily
+        - Weekly
+        - Monthly
+        - Per client or project
+        - Occasionally
+    validations:
+      required: true
+
+  - type: textarea
+    id: value
+    attributes:
+      label: Commercial value
+      description: Explain time saved, risk reduced, revenue supported, or willingness to pay.
+
+  - type: textarea
+    id: controls
+    attributes:
+      label: Required safety and approval controls
+      description: For write-capable integrations, describe target restrictions, approvals, verification, and rollback needs.
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: This request contains no secrets, confidential customer data, or private repository content.
+          required: true

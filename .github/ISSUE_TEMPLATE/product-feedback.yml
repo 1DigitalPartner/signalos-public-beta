@@ -1,0 +1,95 @@
+name: Product feedback
+description: Share structured feedback about clarity, usefulness, trust, or commercial value.
+title: "[Feedback]: "
+labels:
+  - product-feedback
+  - beta-feedback
+body:
+  - type: dropdown
+    id: path
+    attributes:
+      label: Testing path
+      options:
+        - Explorer
+        - Operator
+        - Design Partner
+        - General product review
+    validations:
+      required: true
+
+  - type: input
+    id: area
+    attributes:
+      label: Area reviewed
+      placeholder: Onboarding, scan report, recommendations, approvals, pricing...
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What were you trying to achieve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: observation
+    attributes:
+      label: Observation
+      description: What worked well or poorly?
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: User or business impact
+      description: Explain the effect on clarity, trust, time, implementation, or commercial value.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: clarity
+    attributes:
+      label: Clarity score
+      options:
+        - "1 — Unclear"
+        - "2 — Weak"
+        - "3 — Acceptable"
+        - "4 — Strong"
+        - "5 — Excellent"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: usefulness
+    attributes:
+      label: Usefulness score
+      options:
+        - "1 — Unusable"
+        - "2 — Weak"
+        - "3 — Acceptable"
+        - "4 — Strong"
+        - "5 — Excellent"
+    validations:
+      required: true
+
+  - type: textarea
+    id: value
+    attributes:
+      label: Commercial value
+      description: Which result would you use repeatedly or pay for?
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Suggested improvement
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I removed confidential and security-sensitive information.
+          required: true
