@@ -12,6 +12,14 @@ It turns approved findings into structured implementation packages that can be r
 
 ---
 
+## See SignalOS in action
+
+![SignalOS dashboard](docs/screenshots/01-dashboard.png)
+
+Explore the complete [product walkthrough](docs/PRODUCT_WALKTHROUGH.md), including diagnostics, recommendations, Premium Agent execution, GitHub approval controls, and verified external writes.
+
+---
+
 ## Why SignalOS exists
 
 Many teams already have data, tools, campaigns, analytics, websites, and automation.
@@ -269,6 +277,7 @@ We are looking for practical feedback on:
 
 ## Start here
 
+- View the [Product Walkthrough](docs/PRODUCT_WALKTHROUGH.md)
 - Read the [Getting Started Guide](GETTING_STARTED.md)
 - Follow the [Testing Guide](TESTING_GUIDE.md)
 - Review the [Feedback Guide](FEEDBACK_GUIDE.md)
