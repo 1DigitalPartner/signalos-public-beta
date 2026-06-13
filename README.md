@@ -309,6 +309,10 @@ Production platform:
 
 `https://app.tanzitech.com`
 
+Beta access:
+
+[Request controlled SignalOS beta access](https://app.tanzitech.com/beta)
+
 ---
 
 ## Important notice

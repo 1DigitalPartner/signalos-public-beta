@@ -400,7 +400,7 @@ Participation does not require public recognition.
 
 ## Request access
 
-The official Design Partner application link will be added before public enrollment opens.
+Apply for the Design Partner track through the [SignalOS beta application](https://app.tanzitech.com/beta). Select **Design Partner** when choosing the program track.
 
 Until then, program questions may be sent to:
 

@@ -51,7 +51,7 @@ Design partners evaluate SignalOS on real workflows and provide deeper product a
 
 The hosted SignalOS beta may remain invite-only while we validate capacity, safety, abuse prevention, and connector reliability.
 
-The official beta access link will be published in this repository before public enrollment begins.
+Request controlled beta access at [app.tanzitech.com/beta](https://app.tanzitech.com/beta). Applications are reviewed manually and submission does not guarantee access.
 
 When requesting access, be prepared to provide:
 
